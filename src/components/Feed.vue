@@ -5,23 +5,28 @@
         <v-list-item-content>
           <v-list-item-title v-html="post.titulo"></v-list-item-title>
           <v-list-item-subtitle v-html="post.descricao"></v-list-item-subtitle>
+
+          <v-row>
+            <v-col cols="2">
+              <v-list-item-action>
+                <v-btn icon>
+                  <v-icon> mdi-thumb-up-outline </v-icon>
+                  {{ post.likes }}
+                </v-btn>
+              </v-list-item-action>
+            </v-col>
+            <v-col cols="2">
+              <v-list-item-action>
+                <v-btn icon>
+                  <v-icon>mdi-comment-text-outline</v-icon>
+                  {{ post.comentarios }}
+                </v-btn>
+              </v-list-item-action>
+            </v-col>
+          </v-row>
+          <v-divider :key="index"></v-divider>
         </v-list-item-content>
       </v-list-item>
-
-      <v-list-item-action :key="post.likes">
-        <v-list-item-action-text v-text="post.likes"></v-list-item-action-text>
-        <v-btn icon>
-          <v-icon> mdi-thumb-up-outline </v-icon>
-        </v-btn>
-      </v-list-item-action>
-      <v-list-item-action :key="post.comentarios">
-        <v-list-item-action-text v-text="post.comentarios"></v-list-item-action-text>
-        <v-btn icon>
-          <v-icon>mdi-comment-text-outline</v-icon>
-        </v-btn>
-      </v-list-item-action>
-
-      <v-divider :key="index"></v-divider>
     </template>
   </v-list>
 </template>
