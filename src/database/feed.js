@@ -6,4 +6,11 @@ export default [
     likes: 5,
     comentarios: 8,
   },
+  {
+    titulo: 'Vcs viram a palestra do Marcelo Tás??',
+    descricao: 'Eu achei muito interessante e motivacional',
+    autor: 'Mayara borges',
+    likes: 7,
+    comentarios: 9,
+  },
 ];
