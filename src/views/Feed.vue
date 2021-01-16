@@ -23,16 +23,21 @@
         >
       </v-col>
     </v-row>
-    <v-row>
-      <v-col> </v-col>
+    <v-row justify="center">
+      <Feed v-if="feed" />
     </v-row>
   </v-container>
 </template>
 
 <script>
+import Feed from '../components/Feed.vue';
+
 export default {
   data: () => ({
     feed: true,
   }),
+  components: {
+    Feed,
+  },
 };
 </script>
