@@ -1,6 +1,8 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary">
+      <v-app-bar-nav-icon @click="drawer = true" dark />
+
       <!-- <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -10,25 +12,21 @@
           transition="scale-transition"
           width="40"
         />
-
       </div> -->
+      <v-toolbar-title class="white--text font-weight-bold"> WORKO </v-toolbar-title>
 
-      <v-toolbar-title> WORKO </v-toolbar-title>
-      <v-spacer />
-      <v-toolbar-items>
-        <v-btn dark color="primary" depressed to="/">
-          <v-icon>mdi-account-outline</v-icon>
-          Feed
-        </v-btn>
-        <v-btn dark color="primary" depressed to="/atividades">
-          <v-icon>mdi-checkbox-marked-outline</v-icon>
-          Atividades
-        </v-btn>
-        <v-btn dark color="primary" depressed to="/perfil">
-          <v-icon>mdi-account-outline</v-icon>
-          Perfil
-        </v-btn>
-      </v-toolbar-items>
+      <v-navigation-drawer v-model="drawer" absolute app>
+        <v-list nav dense>
+          <v-list-item-group v-model="group">
+            <v-list-item v-for="{ nome, icon, path } in menus" :to="path" :key="nome">
+              <v-list-item-icon>
+                <v-icon>{{ icon }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>{{ nome }}</v-list-item-title>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-navigation-drawer>
     </v-app-bar>
 
     <v-main>
@@ -38,13 +36,17 @@
 </template>
 
 <script>
+import menus from '@/database/menus';
+
 export default {
   name: 'App',
 
   components: {},
 
   data: () => ({
-    //
+    drawer: false,
+    group: null,
+    menus,
   }),
 };
 </script>
