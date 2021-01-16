@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary">
+    <v-app-bar app color="primary" dense>
       <v-app-bar-nav-icon @click="drawer = true" dark />
 
       <!-- <div class="d-flex align-center">
