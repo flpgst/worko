@@ -75,7 +75,7 @@
             <v-chip
               v-for="habilidade in habilidadesDesenvolvidas"
               :key="habilidade"
-              color="light-blue"
+              color="primary"
             >
               {{ habilidade }}
             </v-chip>
