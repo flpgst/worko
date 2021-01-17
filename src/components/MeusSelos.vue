@@ -1,5 +1,5 @@
 <template>
-  <v-card outlined class="ma-2 pa-2">
+  <v-card outlined class="ma-2 py-2 px-3">
     <v-card-title class="primary--text pa-0 font-weight-bold body-2">Seus Selos: </v-card-title>
     <v-row justify="center" align="center">
       <v-col cols="2"> <v-img :src="s01Active" max-width="40" /></v-col>
