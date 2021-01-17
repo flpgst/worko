@@ -6,6 +6,7 @@ import Comentarios from '@/views/Comentarios.vue';
 import Perfil from '@/views/Perfil.vue';
 import Atividades from '@/views/Atividades.vue';
 import Educacao from '@/views/Educacao.vue';
+import CadastroEstudante from '@/views/CadastroEstudante.vue';
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,11 @@ const routes = [
     path: '/educacao-e-desenvolvimento',
     name: 'educacao-e-desenvolvimento',
     component: Educacao,
+  },
+  {
+    path: '/cadastro-estudante',
+    name: 'cadastro-estudante',
+    component: CadastroEstudante,
   },
   {
     path: '/perfil',
