@@ -5,9 +5,10 @@ export default [
     id: 1,
     titulo: 'Desafio de Leitura Worko - Como fazer amigos e influenciar pessoas',
     descricao:
-      'Gente acabei de finalizar o desafio de leitura daqui da Worko e vim compartilhar algumas das lições que aprendi com esse livro!Para quem ainda não fez o desafio de leitura desse mês, não sabe o livro incrivel que está perdendo.Aqui estão algumas das lições do livro:Princípio 1: nunca critique, condene ou reclame.Sabe aquela pessoa que vive reclamando da vida? Para ela, sempre tem algo ruim. Criticar os outros, então, se tornou rotina. E isso afeta aqueles que estão ao redor. Todos ficam para baixo e as vítimas da crítica ficam ressentidas e com o orgulho ferido....',
+      'Gente acabei de finalizar o desafio de leitura daqui da Worko e vim compartilhar algumas das lições que aprendi com esse livro!<br />Para quem ainda não fez o desafio de leitura desse mês, não sabe o livro incrivel que está perdendo.<br />Aqui estão algumas das lições do livro:<br />Princípio 1: nunca critique, condene ou reclame.<br />Sabe aquela pessoa que vive reclamando da vida? Para ela, sempre tem algo ruim. Criticar os outros, então, se tornou rotina. E isso afeta aqueles que estão ao redor. Todos ficam para baixo e as vítimas da crítica ficam ressentidas e com o orgulho ferido....',
     imagem: Imagem1,
-    autor: 'João da Silva',
+    autor: 'Claudia Maria',
+    autorId: 1,
     data: '05/01/2021',
     likes: 5,
     comentarios: 8,

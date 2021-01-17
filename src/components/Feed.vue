@@ -54,7 +54,7 @@
             </v-row>
 
             <v-row>
-              <v-col v-text="descricao" class="text-justify" />
+              <v-col v-html="descricao" class="text-justify" />
             </v-row>
 
             <v-row>
