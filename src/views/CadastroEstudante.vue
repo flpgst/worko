@@ -60,7 +60,7 @@
     </v-card>
     <v-card flat color="grey lighten-4" class="px-3 my-2 py-2">
       <v-card-title>Com quais dessas características você se identifica?</v-card-title>
-      <v-chip-group multiple active-class="accent--text" column>
+      <v-chip-group multiple active-class="primary" column>
         <v-chip
           v-for="(caracteristica, index) in caracteristicas"
           :key="index"
@@ -73,7 +73,7 @@
     </v-card>
     <v-card flat color="grey lighten-4" class="px-3 my-2 py-2">
       <v-card-title>Selecione algumas competências</v-card-title>
-      <v-chip-group multiple active-class="accent--text" column>
+      <v-chip-group multiple active-class="primary" column>
         <v-chip
           v-for="(competencia, index) in competencias"
           :key="index"
