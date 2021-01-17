@@ -3,17 +3,16 @@
     <v-app-bar app color="primary" dense>
       <v-app-bar-nav-icon @click="drawer = true" dark />
 
-      <!-- <div class="d-flex align-center">
+      <div class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Worko Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          :src="worko"
           transition="scale-transition"
-          width="40"
+          width="100"
         />
-      </div> -->
-      <v-toolbar-title class="white--text font-weight-bold"> WORKO </v-toolbar-title>
+      </div>
 
       <v-navigation-drawer v-model="drawer" absolute app>
         <v-list nav dense>
@@ -37,6 +36,7 @@
 
 <script>
 import menus from '@/database/menus';
+import worko from '@/database/images/worko.svg';
 
 export default {
   name: 'App',
@@ -47,6 +47,7 @@ export default {
     drawer: false,
     group: null,
     menus,
+    worko,
   }),
 };
 </script>
