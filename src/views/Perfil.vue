@@ -64,13 +64,15 @@
     </v-row>
 
     <Curriculo v-if="tab === 'curriculo'" :usuario="usuario" />
-    <Selos v-else-if="tab === 'selos'" :usuario="usuario" />
+    <Selos v-else-if="tab === 'selos'" />
+    <Posts v-else />
   </v-container>
 </template>
 
 <script>
 import Curriculo from '@/components/Curriculo.vue';
 import Selos from '@/components/Selos.vue';
+import Posts from '@/components/PostsUsuario.vue';
 
 import usuarios from '@/database/usuarios/usuarios';
 
@@ -79,6 +81,7 @@ export default {
   components: {
     Curriculo,
     Selos,
+    Posts,
   },
   data: () => ({
     usuario: usuarios[0],
