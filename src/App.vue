@@ -13,7 +13,17 @@
           width="100"
         />
       </div>
-
+      <v-spacer></v-spacer>
+      <v-btn
+        to="/cadastro-estudante"
+        v-if="$route.name === 'Home'"
+        small
+        rounded
+        depressed
+        color="accent"
+      >
+        Cadastre-se
+      </v-btn>
       <v-navigation-drawer v-model="drawer" absolute app>
         <v-list nav dense>
           <v-list-item-group v-model="group">
