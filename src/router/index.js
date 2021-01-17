@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Feed from '@/views/Feed.vue';
 import Comentarios from '@/views/Comentarios.vue';
+import Atividades from '@/views/Atividades.vue';
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes = [
     props: ({ params }) => ({
       postId: params.postId,
     }),
+  },
+  {
+    path: '/atividades',
+    name: 'Atividades',
+    component: Atividades,
   },
 ];
 
