@@ -33,11 +33,6 @@ const routes = [
     name: 'educacao-e-desenvolvimento',
     component: Educacao,
   },
-  {
-    path: '/perfil',
-    name: 'Perfil',
-    component: Perfil,
-  },
 ];
 
 const router = new VueRouter({
