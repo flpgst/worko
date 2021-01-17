@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pt-6">
     <v-row justify="center" class="ma-0">
       <v-col cols="11" class="py-0">
         <v-textarea v-model="post" filled label="Escreva seu post aqui" shaped></v-textarea>
@@ -29,6 +29,7 @@
         v-for="{ id, titulo, descricao, data, imagem, autor, comentarios, likes } in feed"
         :key="id"
         class="my-3"
+        :to="`/comentarios/${id}`"
       >
         <v-card flat color="grey lighten-4" class="px-3 my-2">
           <v-list-item-content>
