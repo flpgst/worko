@@ -14,6 +14,7 @@
       <v-list>
         <v-list-item
           v-for="{ id, instituicao, curso, inicio, conclusao, concluido } in usuario.educacao"
+          class="grey lighten-3 mb-3 pb-2"
           :key="id"
         >
           <v-list-item-content class="body-2">
@@ -56,6 +57,7 @@
             competencias,
           } in usuario.extracurriculares"
           :key="id"
+          class="grey lighten-3 mb-3"
         >
           <v-list-item-content class="body-2">
             <v-list-item-title v-text="curso" class="font-weight-bold" />
