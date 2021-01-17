@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dense>
-      <v-app-bar-nav-icon @click="drawer = true" dark />
+      <v-app-bar-nav-icon @click="drawer = !drawer" dark />
 
       <div class="d-flex align-center">
         <v-img
@@ -24,7 +24,7 @@
       >
         Cadastre-se
       </v-btn>
-      <v-navigation-drawer v-model="drawer" absolute app>
+      <v-navigation-drawer v-model="drawer" absolute app temporary>
         <v-list nav dense>
           <v-list-item-group v-model="group">
             <v-list-item v-for="{ nome, icon, path } in menus" :to="path" :key="nome">
@@ -39,7 +39,9 @@
     </v-app-bar>
 
     <v-main>
-      <router-view />
+      <v-container style="width: 420px" class="pa-0">
+        <router-view />
+      </v-container>
     </v-main>
   </v-app>
 </template>
