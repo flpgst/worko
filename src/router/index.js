@@ -3,6 +3,7 @@ import VueRouter from 'vue-router';
 
 import Feed from '@/views/Feed.vue';
 import Comentarios from '@/views/Comentarios.vue';
+import Perfil from '@/views/Perfil.vue';
 import Atividades from '@/views/Atividades.vue';
 
 Vue.use(VueRouter);
@@ -25,6 +26,11 @@ const routes = [
     path: '/atividades',
     name: 'Atividades',
     component: Atividades,
+  },
+  {
+    path: '/perfil',
+    name: 'Perfil',
+    component: Perfil,
   },
 ];
 
