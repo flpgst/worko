@@ -71,7 +71,7 @@
                     :key="competencia"
                     small
                     class="mr-1 mb-1"
-                    color="light-blue"
+                    color="primary"
                   >
                     {{ competencia }}
                   </v-chip>
