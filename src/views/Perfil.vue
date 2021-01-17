@@ -34,7 +34,7 @@
           small
           tile
           depressed
-          :color="tab === 'curriculo' ? 'primary' : null"
+          :color="tab === 'curriculo' ? 'primary' : 'grey lighten-3'"
           v-text="'Currículo'"
           @click="tab = 'curriculo'"
         />
@@ -45,7 +45,7 @@
           small
           tile
           depressed
-          :color="tab === 'selos' ? 'primary' : null"
+          :color="tab === 'selos' ? 'primary' : 'grey lighten-3'"
           v-text="'Selos'"
           @click="tab = 'selos'"
         />
@@ -56,7 +56,7 @@
           small
           tile
           depressed
-          :color="tab === 'posts' ? 'primary' : null"
+          :color="tab === 'posts' ? 'primary' : 'grey lighten-3'"
           v-text="'Posts'"
           @click="tab = 'posts'"
         />
