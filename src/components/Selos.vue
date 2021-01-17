@@ -39,12 +39,6 @@ import selo06Disabled from '@/database/images/selos/06-disabled.png';
 
 export default {
   name: 'selos-usuario',
-  props: {
-    usuario: {
-      type: Object,
-      default: null,
-    },
-  },
   data: () => ({
     selo01Active,
     selo02Disabled,
